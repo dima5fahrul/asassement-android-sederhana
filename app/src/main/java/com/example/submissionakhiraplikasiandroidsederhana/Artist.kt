@@ -1,0 +1,19 @@
+package com.example.submissionakhiraplikasiandroidsederhana
+
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
+@Parcelize
+data class Artist(
+    val name: String,
+    val place: String,
+    val photo: Int,
+    val description: String,
+    val morePhoto: Int,
+    val joined: String,
+    val totalSpotifyStreams: String,
+    val totalYoutubeStreams: String,
+    val totalSpotifyFollowers: String,
+    val totalInstagramFollowers: String,
+    val totalYoutubeSubscribers: String,
+) : Parcelable
