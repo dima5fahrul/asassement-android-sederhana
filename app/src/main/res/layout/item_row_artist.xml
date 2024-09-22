@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -26,10 +27,97 @@
             tools:src="@tools:sample/avatars" />
 
         <TextView
+            android:id="@+id/tv_item_joined"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="8dp"
-            android:textSize="16sp" />
+            android:ellipsize="end"
+            style="@style/TextContent.BodyMedium"
+            card_view:layout_constraintBottom_toBottomOf="@+id/tv_item_name"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintTop_toTopOf="@id/img_item_photo"
+            card_view:layout_constraintVertical_bias="0.0"
+            android:text="@string/year_joined" />
+
+        <TextView
+            android:id="@+id/tv_item_name"
+            style="@style/TextContent.TitleMedium.Bold.MarginLeftRight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/artist_name"
+            card_view:layout_constraintEnd_toStartOf="@+id/tv_item_joined"
+            card_view:layout_constraintStart_toEndOf="@+id/img_item_photo"
+            card_view:layout_constraintTop_toTopOf="@+id/img_item_photo" />
+
+        <TextView
+            android:id="@+id/tv_item_place"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/TextContent.BodyMedium"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toStartOf="@+id/tv_item_name"
+            card_view:layout_constraintTop_toBottomOf="@+id/tv_item_name"
+            card_view:layout_constraintVertical_bias="0.0"
+            android:text="@string/place" />
+
+        <ImageView
+            android:id="@+id/img_spotify_logo"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            card_view:layout_constraintStart_toStartOf="@+id/tv_item_place"
+            card_view:layout_constraintTop_toBottomOf="@id/tv_item_place"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/spotify" />
+
+        <TextView
+            android:id="@+id/tv_item_total_spotify_stream"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/total_spotify_stream"
+            style="@style/TextContent.BodyMedium.Bold"
+            card_view:layout_constraintStart_toEndOf="@id/img_spotify_logo"
+            card_view:layout_constraintTop_toBottomOf="@id/tv_item_place"
+            card_view:layout_constraintTop_toTopOf="@id/img_spotify_logo" />
+
+        <TextView
+            android:id="@+id/tv_item_spotify_stream"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/streams_monthly"
+            style="@style/TextContent.BodyMedium"
+            android:layout_marginStart="4dp"
+            card_view:layout_constraintStart_toEndOf="@+id/tv_item_total_spotify_stream"
+            card_view:layout_constraintTop_toTopOf="@id/tv_item_total_spotify_stream" />
+
+        <ImageView
+            android:id="@+id/img_youtube_logo"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/youtube"
+            card_view:layout_constraintTop_toBottomOf="@id/img_spotify_logo"
+            card_view:layout_constraintStart_toStartOf="@id/img_spotify_logo" />
+
+        <TextView
+            android:id="@+id/tv_item_total_youtube_stream"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            style="@style/TextContent.BodyMedium.Bold"
+            android:text="@string/total_youtube_stream"
+            card_view:layout_constraintStart_toEndOf="@id/img_youtube_logo"
+            card_view:layout_constraintTop_toBottomOf="@id/tv_item_total_spotify_stream"
+            card_view:layout_constraintTop_toTopOf="@id/img_youtube_logo" />
+
+        <TextView
+            android:id="@+id/tv_item_youtube_stream"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/viewers"
+            style="@style/TextContent.BodyMedium"
+            android:layout_marginStart="4dp"
+            card_view:layout_constraintStart_toEndOf="@+id/tv_item_total_youtube_stream"
+            card_view:layout_constraintTop_toTopOf="@id/tv_item_total_youtube_stream" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

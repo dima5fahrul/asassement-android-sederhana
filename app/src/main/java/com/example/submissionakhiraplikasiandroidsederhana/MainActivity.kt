@@ -24,7 +24,6 @@ class MainActivity : AppCompatActivity() {
         Handler(Looper.getMainLooper()).postDelayed({
             val intent = Intent(this@MainActivity, ListActivity::class.java)
             startActivity(intent)
-            finish()
         }, splashScreenDuration)
     }
 }
