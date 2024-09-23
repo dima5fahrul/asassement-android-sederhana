@@ -22,6 +22,10 @@ class ListActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        
+        if (supportActionBar != null) {
+            supportActionBar!!.title = "Home";
+        }
 
         rvArtist = findViewById(R.id.rv_artist)
         rvArtist.setHasFixedSize(true)
@@ -38,6 +42,16 @@ class ListActivity : AppCompatActivity() {
         val dataJoined = resources.getStringArray(R.array.data_joined)
         val dataTotalSpotifyStreams = resources.getStringArray(R.array.data_total_spotify_streams)
         val dataTotalYoutubeStreams = resources.getStringArray(R.array.data_total_youtube_streams)
+        val datadescription = resources.getStringArray(R.array.data_description)
+        val morePhoto1 = resources.obtainTypedArray(R.array.more_photo1)
+        val morePhoto2 = resources.obtainTypedArray(R.array.more_photo2)
+        val morePhoto3 = resources.obtainTypedArray(R.array.more_photo3)
+        val dataTotalSpotifyFollowers =
+            resources.getStringArray(R.array.data_total_spotify_followers)
+        val dataTotalInstagramFollowers =
+            resources.getStringArray(R.array.data_total_instagram_followers)
+        val dataTotalYoutubeSubscribers =
+            resources.getStringArray(R.array.data_total_youtube_subscribers)
 
         val listArtist = ArrayList<Artist>()
 
@@ -49,11 +63,13 @@ class ListActivity : AppCompatActivity() {
                 dataJoined[i],
                 dataTotalSpotifyStreams[i],
                 dataTotalYoutubeStreams[i],
-                "",
-                -1,
-                "",
-                "",
-                ""
+                datadescription[i],
+                morePhoto1.getResourceId(i, -1),
+                morePhoto2.getResourceId(i, -1),
+                morePhoto3.getResourceId(i, -1),
+                dataTotalSpotifyFollowers[i],
+                dataTotalInstagramFollowers[i],
+                dataTotalYoutubeSubscribers[i]
             )
             listArtist.add(artist)
         }

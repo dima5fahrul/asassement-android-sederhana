@@ -6,10 +6,14 @@
     <string name="deskripsi">Deskripsi</string>
     <string name="place">Place</string>
     <string name="year_joined">Year Joined</string>
-    <string name="total_spotify_stream">Total Spotify Stream</string>
+    <string name="total_spotify_stream">Total Spotify Stream :</string>
     <string name="total_youtube_stream">Total Youtube Stream</string>
     <string name="streams_monthly">streams monthly</string>
     <string name="viewers">viewers</string>
+    <string name="joined_on">Joined on :</string>
+    <string name="total">Total</string>
+    <string name="followers">Total Followers</string>
+    <string name="biography">Biography</string>
 
     <string-array name="data_photo">
         <item>@drawable/aspyer</item>
@@ -23,6 +27,48 @@
         <item>@drawable/thirdparty</item>
         <item>@drawable/threelau</item>
         <item>@drawable/tvnoise</item>
+    </string-array>
+
+    <string-array name="more_photo1">
+        <item>@drawable/aspyer1</item>
+        <item>@drawable/blinders1</item>
+        <item>@drawable/brooks1</item>
+        <item>@drawable/dubvision1</item>
+        <item>@drawable/julianjordan1</item>
+        <item>@drawable/martingarrix1</item>
+        <item>@drawable/matissesadko1</item>
+        <item>@drawable/mesto1</item>
+        <item>@drawable/thirdparty1</item>
+        <item>@drawable/threelau1</item>
+        <item>@drawable/tvnoise1</item>
+    </string-array>
+
+    <string-array name="more_photo2">
+        <item>@drawable/aspyer2</item>
+        <item>@drawable/blinders2</item>
+        <item>@drawable/brooks2</item>
+        <item>@drawable/dubvision2</item>
+        <item>@drawable/julianjordan2</item>
+        <item>@drawable/martingarrix2</item>
+        <item>@drawable/matissesadko2</item>
+        <item>@drawable/mesto2</item>
+        <item>@drawable/thirdparty2</item>
+        <item>@drawable/threelau2</item>
+        <item>@drawable/tvnoise2</item>
+    </string-array>
+
+    <string-array name="more_photo3">
+        <item>@drawable/aspyer3</item>
+        <item>@drawable/blinders3</item>
+        <item>@drawable/brooks3</item>
+        <item>@drawable/dubvision3</item>
+        <item>@drawable/julianjordan3</item>
+        <item>@drawable/martingarrix3</item>
+        <item>@drawable/matissesadko3</item>
+        <item>@drawable/mesto3</item>
+        <item>@drawable/thirdparty3</item>
+        <item>@drawable/threelau3</item>
+        <item>@drawable/tvnoise3</item>
     </string-array>
 
     <string-array name="data_name">

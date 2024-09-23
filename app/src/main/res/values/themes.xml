@@ -1,6 +1,6 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="Base.Theme.SubmissionAkhirAplikasiAndroidSederhana" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.SubmissionAkhirAplikasiAndroidSederhana" parent="Theme.Material3.DayNight">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/gray_light</item>
         <item name="colorOnPrimary">@color/black</item>
@@ -15,7 +15,6 @@
     </style>
 
     <style name="TextContent.HeadlineMedium">
-        <item name="android:layout_marginHorizontal">16dp</item>
         <item name="android:textAppearance">@style/TextAppearance.Material3.HeadlineMedium</item>
     </style>
 
@@ -33,6 +32,10 @@
 
     <style name="TextContent.TitleMedium.Bold.MarginLeftRight">
         <item name="android:layout_marginHorizontal">16dp</item>
+    </style>
+    
+    <style name="TextContent.TitleMedium.Gray">
+        <item name="android:textColor">@color/colorSubtitle</item>
     </style>
 
     <style name="TextContent.BodyMedium">
@@ -73,4 +76,9 @@
     </style>
 
     <style name="Theme.SubmissionAkhirAplikasiAndroidSederhana" parent="Base.Theme.SubmissionAkhirAplikasiAndroidSederhana" />
+
+    <style name="Theme.SubmissionAkhirAplikasiAndroidSederhana.NoActionBar" parent="Base.Theme.SubmissionAkhirAplikasiAndroidSederhana">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
 </resources>
