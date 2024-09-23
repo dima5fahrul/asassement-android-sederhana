@@ -15,6 +15,10 @@
     <string name="followers">Total Followers</string>
     <string name="biography">Biography</string>
     <string name="photo_image">photo image</string>
+    <string name="about">About</string>
+    <string name="me">me</string>
+    <string name="my_name">Dimas Fahrul</string>
+    <string name="my_email">dfahrul07@gmail.com</string>
 
     <string-array name="data_photo">
         <item>@drawable/aspyer</item>

@@ -40,7 +40,6 @@ class DetailActivity : AppCompatActivity() {
         val morePhoto2 = intent.getIntExtra("morePhoto2", 0)
         val morePhoto3 = intent.getIntExtra("morePhoto3", 0)
 
-        // Tampilkan data pada layout
         findViewById<ImageView>(R.id.img_detail_photo).setImageResource(photo)
         findViewById<TextView>(R.id.tv_detail_artist_name).text = name
         findViewById<TextView>(R.id.tv_detail_place).text = place
