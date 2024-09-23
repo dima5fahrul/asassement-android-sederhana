@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
     tools:context=".DetailActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="16dp"
         android:orientation="vertical">
 
         <TableLayout
@@ -25,6 +25,7 @@
                     android:id="@+id/img_detail_photo"
                     android:layout_width="150dp"
                     android:layout_height="200dp"
+                    android:contentDescription="@string/photo_image"
                     tools:src="@tools:sample/avatars" />
 
                 <LinearLayout
@@ -71,6 +72,7 @@
                         <ImageView
                             android:layout_width="24dp"
                             android:layout_height="24dp"
+                            android:contentDescription="@string/photo_image"
                             android:src="@drawable/spotify" />
 
                         <TextView
@@ -96,6 +98,7 @@
                         <ImageView
                             android:layout_width="24dp"
                             android:layout_height="24dp"
+                            android:contentDescription="@string/photo_image"
                             android:src="@drawable/youtube" />
 
                         <TextView
@@ -122,7 +125,7 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="120dp"
-            android:layout_marginVertical="16dp"
+            android:layout_marginVertical="8dp"
             android:padding="16dp">
 
             <ImageView
@@ -131,6 +134,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginHorizontal="8dp"
+                android:contentDescription="@string/photo_image"
                 tools:src="@tools:sample/avatars" />
 
             <ImageView
@@ -139,6 +143,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginHorizontal="8dp"
+                android:contentDescription="@string/photo_image"
                 tools:src="@tools:sample/avatars" />
 
             <ImageView
@@ -147,6 +152,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginHorizontal="8dp"
+                android:contentDescription="@string/photo_image"
                 tools:src="@tools:sample/avatars" />
 
         </TableRow>
@@ -172,6 +178,7 @@
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
+                    android:contentDescription="@string/photo_image"
                     android:src="@drawable/spotify" />
 
                 <TextView
@@ -193,6 +200,7 @@
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
+                    android:contentDescription="@string/photo_image"
                     android:src="@drawable/youtube" />
 
                 <TextView
@@ -214,6 +222,7 @@
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
+                    android:contentDescription="@string/photo_image"
                     android:src="@drawable/instagram" />
 
                 <TextView

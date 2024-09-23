@@ -1,6 +1,7 @@
 package com.example.submissionakhiraplikasiandroidsederhana
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -39,5 +40,24 @@ class ListArtistAdapter(private val listArtist: ArrayList<Artist>) :
         holder.tvPlace.text = artist.place
         holder.tvTotalSpotifyStream.text = artist.totalSpotifyStreams
         holder.tvTotalYoutubeStream.text = artist.totalYoutubeStreams
+
+        holder.itemView.setOnClickListener {
+            val intent = Intent(holder.itemView.context, DetailActivity::class.java)
+            intent.putExtra("name", artist.name)
+            intent.putExtra("place", artist.place)
+            intent.putExtra("photo", artist.photo)
+            intent.putExtra("joined", artist.joined)
+            intent.putExtra("totalSpotifyStreams", artist.totalSpotifyStreams)
+            intent.putExtra("totalYoutubeStreams", artist.totalYoutubeStreams)
+            intent.putExtra("totalSpotifyFollowers", artist.totalSpotifyFollowers)
+            intent.putExtra("totalInstagramFollowers", artist.totalInstagramFollowers)
+            intent.putExtra("totalYoutubeSubscribers", artist.totalYoutubeSubscribers)
+            intent.putExtra("description", artist.description)
+            intent.putExtra("morePhoto1", artist.morePhoto1)
+            intent.putExtra("morePhoto2", artist.morePhoto2)
+            intent.putExtra("morePhoto3", artist.morePhoto3)
+
+            holder.itemView.context.startActivity(intent)
+        }
     }
 }

@@ -14,6 +14,7 @@
     <string name="total">Total</string>
     <string name="followers">Total Followers</string>
     <string name="biography">Biography</string>
+    <string name="photo_image">photo image</string>
 
     <string-array name="data_photo">
         <item>@drawable/aspyer</item>
@@ -88,7 +89,6 @@
     <string-array name="data_place">
         <item>Russia</item>
         <item>Poland</item>
-        <item>Netherlands</item>
         <item>Netherlands</item>
         <item>Netherlands</item>
         <item>Netherlands</item>
